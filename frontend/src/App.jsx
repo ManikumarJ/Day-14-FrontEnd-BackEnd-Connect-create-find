@@ -79,14 +79,14 @@ const App = () => {
       <div style={{ padding: "20px" }}>
         <button onClick={fetchStudents}>Fetch Students</button>
 
-        {students.map((student) => (
-          <div key={student._id}
+        {students.map((e) => (
+          <div key={e._id}
             style={{ border: "1px solid gray", margin: "10px", padding: "10px" }}>
-            <h3>{student.studentName}</h3>
-            <p>Age: {student.age}</p>
-            <p>Course: {student.course}</p>
-            <p>Email: {student.email}</p>
-            <p>Status: {student.status}</p>
+            <h3>{e.studentName}</h3>
+            <p>Age: {e.age}</p>
+            <p>Course: {e.course}</p>
+            <p>Email: {e.email}</p>
+            <p>Status: {e.status}</p>
           </div>
         ))}
       </div>
