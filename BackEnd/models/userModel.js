@@ -13,6 +13,6 @@ const studentSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const studentDataModel = mongoose.model("studentsData", studentSchema);
+const studentDataModel = mongoose.model("studentRegisterDetails", studentSchema);
 
 export default studentDataModel;

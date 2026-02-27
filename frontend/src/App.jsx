@@ -29,10 +29,9 @@ const App = () => {
       const res = await axios.post( "http://localhost:5000/api/student/create", data);
 
       // console.log(res.data.msg);
-      
+
       alert(res.data.msg);
       setData(studentSchema);
-      fetchStudents();
     } catch (error) {
       console.log(error);
     }
